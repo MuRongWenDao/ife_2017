@@ -6,11 +6,10 @@
 </head>
 <body>
 <script type="text/javascript">
-
+// task1
 //    移动号段：134、135、136、137、138、139、147、150、151、152、157、158、159、178、182、183、184、187、188
 //    联通号段：130、131、132、155、156、185、186、145、176
 //    电信号段：133、153、180、181、177
-
 //  结合起来： 13[0-9], 145,147,15[0-3,5-9],173,176,177,18[0-8]
 
 var str1 = "18812011232",
@@ -23,6 +22,15 @@ var rs3 = patt.test(str3);
 
 console.log(rs1 + "/" + rs2 + "/" + rs3);
 
+
+// task2
+var str1 = "foo  barbar bar";
+var str2 = "foo  bar bar";
+var patt1 = new RegExp(/\b(\w+)\b\s+\1\b/g);
+var result1 = patt1.test(str1);
+var result2 = patt1.test(str2);
+console.log(result1);
+console.log(result2);
 
 </script>
 </body>
